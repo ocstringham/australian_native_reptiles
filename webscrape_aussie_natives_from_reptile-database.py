@@ -61,4 +61,5 @@ natives = [x for x in sp if x not in nn]
 
 
 # to csv
-natives.to_csv('aus_native_reptiles.csv')
+df = pd.DataFrame(data={"species": natives})
+df.to_csv("aus_native_reptiles.csv", index = False)
